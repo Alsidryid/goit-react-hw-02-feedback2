@@ -1,7 +1,9 @@
-export default function Section({title, children}) {
+import style from './Section.module.css'
+
+export default function Section({ title, children }) {
     return (
-        <section>
-            <h3>{title}</h3>
+        <section className={style.section}>
+            <h3 className={style.title}>{title}</h3>
             {children}
         </section>
     )
