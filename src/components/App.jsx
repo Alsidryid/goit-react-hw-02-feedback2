@@ -26,7 +26,6 @@ export default class App  extends Component {
     }
 
   onLeaveFeedback = (keyName) => {
-      console.log("hello")
         this.setState(prevState => {
             return {
             [keyName]:prevState[keyName] + 1
